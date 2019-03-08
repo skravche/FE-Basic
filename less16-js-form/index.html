@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <title>js reg form</title>
+  </head>
+  <body>
+    <div class="font-poppins">
+
+      <div class="wrapper wrapper--w680">
+
+        <div class="formbox">
+          <h2 class="title">Registration Form </h2>
+
+          <form name="regForm" method="POST">
+            <div class="lineinput">
+              <div class="input-group sizing">
+                <label class="label">First name*</label>
+                <input class="input-style" type="text" name="first_name">
+                <p id="fname-error" class="error-txt"></p>
+              </div>
+
+              <div class="input-group sizing">
+                <label class="label">Last name</label>
+                <input class="input-style" type="text" name="last_name">
+                <p id="lname-error" class="error-txt"></p>
+              </div>
+            </div>
+
+
+            <div class="lineinput">
+              <div class="input-group sizing">
+                <div class="input-group">
+                  <label class="label">Birthday*</label>
+                  <div class="input-group-icon">
+                    <input class="input-style" type="date" name="bday">
+                  </div>
+                </div>
+
+
+                <div class="input-group-gender">
+                  <label class="label">Gender:</label>
+                  <div class="gender-check">
+                    <label class="radio-container">Male
+                      <input type="radio" name="gender" id="ch1">
+                    </label>
+                    <label class="radio-container">Female
+                      <input type="radio" name="gender" id="ch2">
+                    </label>
+                    <p id="radio-error" class="error-txt"></p>
+                  </div>
+                </div>
+
+                <div class="input-group selector">
+                  <label class="label">Country*</label>
+                  <div class="">
+                    <select name="subject" required>
+                      <option disabled="disabled" selected="selected">Choose your country</option>
+                      <option>Ukraine</option>
+                      <option>Latvia</option>
+                      <option>Spain</option>
+                    </select>
+                    <p id="country-error" class="error-txt"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lineinput">
+              <div class="input-group sizing">
+                <label class="label">Email*</label>
+                <input class="input-style" type="email" name="email">
+                <p id="email-error" class="error-txt"></p>
+              </div>
+              <div class="input-group sizing">
+                <label class="label">Address*</label>
+                <input class="input-style" type="text" name="address">
+                <p id="address-error" class="error-txt"></p>
+              </div>
+            </div>
+
+            <div class="lineinput">
+              <div class="input-group sizing">
+                <label class="label">Password*</label>
+                <input class="input-style" type="password" name="password">
+                <p id="passname-error" class="error-txt"></p>
+              </div>
+
+              <div class="input-group sizing">
+                <label class="label">Confirm Password*</label>
+                <input class="input-style" type="password" name="confPassword">
+                <p id="confPass-error" class="error-txt"></p>
+              </div>
+            </div>
+
+            <div class="lineinput">
+              <label class="label">Notes</label>
+              <textarea class="input-style textarea" rows="4" cols="50" name="notes"></textarea>
+            </div>
+
+
+            <div class="submit-click">
+              <button class="btn" type="button" onclick="validateform()">Submit</button>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>fe.dec18 Mate Academy lesson 1</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+  <h1>Personal Information</h1>
+  <form class="mainForm" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <p><label for="surname">Surname </label><input required id="surname" type="text" name="surname"></p>
+      <p><label for="name">Name </label><input id="name" type="text" name="name"></p>
+      <p><label for="old">How old are You?: </label><input id="old" type="number" name="old"></p>
+      <p><label for="birthdate">Full date of birth: </label><input type="date" name="birthdate" id="birthdate"></p>
+      <p><label for="accept">I accept the terms of the agreement </label><input id="accept" type="checkbox" name="accept"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+      <p><label for="email">E-mail </label> <input id="email" name="email" type="email"></p>
+      <p><label for="pass">Password </label><input id="pass" name="password" type="password"></p>
+    </fieldset>
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <div id="aboutU">
+        <p>Do You love cats?
+          <br><input id="first" type="radio" name="lovecats" value="Yes"><label for="first">Yes</label><br>
+          <input id="second" type="radio" name="lovecats" value="No"><label for="second">Not</label></p>
+          <p>What is your favorite color?
+            <br> <input type="color" name="fcolor" value="#ff0000">
+            <p>What time do you go to bed?
+              <br> <input type="time" name="yourtime">
+              <p>What your favorite brand of cars?
+                <br><select multiple size=4 style="overflow-y: hidden" name="car">
+                  <option value="bmw">BMW</option>
+                  <option value="audi">Audi</option>
+                  <option value="lada">Lada</option>
+                </select>
+                <p>How do you rate our work?</p>
+                <input type="range" name="range" min="0" max="100" step="1" value="50">
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Your comments:</legend>
+              <p><textarea name="comments" rows="4" cols="35" placeholder="Comments"></textarea></p>
+            </fieldset>
+            <div>
+              <button class="button" type="submit" name="button" value="Submit">Submit</button>
+            </div>
+           </form>
+        </body>
+      </html>
