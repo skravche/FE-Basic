@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; }
+h2 {
+  color: #e8e8e8;
+  font-family: $montser;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #444;
+  font-family: $montser;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: $montser;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+body {
+  background: #fcfcfc;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p {
+  font-family: $muli;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ .wrapper {
+   max-width: 1139px;
+   margin: 0 auto;
+ }

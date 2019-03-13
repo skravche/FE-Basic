@@ -1,0 +1,136 @@
+/* header section */
+.top {
+  display: flex;
+  max-width: $m-width;
+  height: 1152px;
+}
+
+.header-info {
+  max-width: 790px;
+  max-height: 394px;
+}
+
+.header-block1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 1;
+  margin: 465px 0 45px -28px;
+}
+
+.top-font {
+  font-family: $montser;
+  color: #444;
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0px 0 0 30px;
+}
+
+.circle-head {
+  position: relative;
+  width: 191px;
+  height: 191px;
+  border-radius: 50%;
+  background-color: #ffe400;
+}
+
+.big-button {
+  margin: 23px 0 40px 0;
+  width: 180px;
+  height: 55px;
+  border: 2px solid #4a4a4a;
+  text-transform: uppercase;
+  background: $bacground_color;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #444;
+  font-family: $montser;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+
+.big-button:hover {
+  background-color: $orange_color;
+  border: 1px solid $orange_color;
+}
+
+.slider { display: flex; }
+
+.slidebox {
+  width: 22px;
+  height: 4px;
+  background-color: #e3e3e3;
+  margin: 0 3px 290px 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.slidebox:hover { background-color: #444; }
+
+.header-block2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 200px 0 0 740px;
+  max-width: 1080px;
+
+  .big-circle-head {
+    margin: -150px 0 0 100px;
+    z-index: -2;
+  }
+
+  .little-circle-head {
+    position: absolute;
+    margin: 536px 0 0 -122px;
+    width: 198px;
+    height: 194px;
+    color: $orange_color;
+    font-family: $montser;
+    font-size: 268px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  span { z-index: -2; }
+}
+
+.menphoto {
+  position: absolute;
+  z-index: -1;
+  margin: -128px 0 0 0;
+}
+
+/*main menu row*/
+
+.main-menu {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 79px;
+  background-size: cover;
+  background-color: #2a2a2a;
+  z-index: 99;
+
+  .logo { margin-right: 140px; }
+  .nav {
+    &-button {
+      font-family: $montser;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: color .4s;
+      margin-right: 62px;
+
+      &:hover {
+        color: #ffe400;
+      }
+    }
+  }
+}

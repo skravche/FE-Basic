@@ -1,0 +1,57 @@
+
+
+.people-pic img {
+  max-width: 936px;
+  max-height: 811px;
+  margin: 60px 0 0 -440px;
+}
+
+.serv-headers {
+  display: flex;
+  justify-content: center;
+  margin: 160px 0 150px 0;
+  @include header-impose(91px, 30px, -480px);
+}
+
+.serv {
+  display: flex;
+
+  &-description {
+
+  }
+}
+
+.service-names {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  padding: 0px;
+  margin-bottom: 128px;
+
+  &-box{
+    max-width: 214px;
+    max-height: 168px;
+    text-align: center;
+    ion-icon {
+      color: #444444;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    h4 {
+      color: #444444;
+      font-family: $montser;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 40px 0 40px 0;
+    }
+    p {
+      color: #757575;
+      font-family: $muli;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

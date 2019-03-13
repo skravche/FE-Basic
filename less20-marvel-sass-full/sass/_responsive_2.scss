@@ -1,0 +1,42 @@
+/* responsive section */
+
+.responsive {
+  max-height: 696px;
+  border: 1px solid #d6d6d6;
+  background-color: $bacground_color_fa;
+}
+.wrapper-resp {
+  max-width: $m-width;
+  margin: 0 auto;
+}
+
+
+.resp-description {
+  margin: 160px 0 118px 0;
+  text-align: left;
+  max-width: 541px;
+}
+
+.resp-headers {
+  margin-left: 0px;
+  @include header-impose(70px, 26px, -484px);
+}
+.resp-info {
+  @include resp-star;
+  margin: 40px 0 52px 0;
+}
+.star-list {
+  @include resp-star;
+  line-height: 35px;
+
+}
+.resp-button {
+}
+.first-resp-pic {
+  position: absolute;
+  margin: -752px 0 0 -290px;
+}
+.second-resp-pic {
+  position: absolute;
+  margin: -645px 0 0 560px;
+}

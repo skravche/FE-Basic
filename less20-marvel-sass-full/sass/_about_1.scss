@@ -1,0 +1,101 @@
+/* about section */
+.about {
+  max-width: $m-width;
+  max-height: 1414px;
+  margin: 0 auto;
+
+  &-button {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &-icons {
+    color: $orange_color;
+    font-size: 126px;
+    font-weight: 400;
+    margin: 0 0 54px 0;
+  }
+
+  &-pictures-bg {
+    position: absolute;
+  }
+  &-circle {
+    position: absolute;
+    margin: -1200px 0 0 -800px;
+    z-index: -2;
+  }
+  &-pad {
+    position: absolute;
+    margin: -600px 0 0 1000px;
+    z-index: -2;
+  }
+
+}
+
+  .description {
+    padding: 74px 0 36px 0;
+    text-align: center;
+    max-width: 936px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+.about-headers {
+  @include header-impose(91px, 36px, -120px);
+}
+
+.about-info {
+  max-width: 936px;
+  font-family: $muli;
+  font-size: 16px;
+  color: #757575;
+  margin: 15px 0 20px 0 ;
+}
+
+.func-about {
+   display: flex;
+   margin: 20px 0 180px 0;
+   z-index: 1;
+
+   .services {
+     font-size: 24px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 360px;
+     height: 399px;
+     background-color: #212121;
+     margin-right: 30px;
+   }
+ }
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 110px;
+  }
+
+  p { font-size: 13px; }
+
+}
+.numbers {
+ display: flex;
+ max-width: 1086px;
+ margin-bottom: 146px;
+
+ h4 {
+   color: #444444;
+   font-size: 46px;
+ }
+
+ &-sec {
+   max-width: 120px;
+   height: auto;
+   margin-right: 220px;
+ }
+}

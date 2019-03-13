@@ -1,0 +1,61 @@
+
+.features {
+  width: 100%;
+  max-height: 986px;
+}
+
+.feat-headers {
+  margin: 126px auto 138px auto;
+  text-align: center;
+  @include header-impose(91px, 30px, -84px);
+}
+
+.grid-feat {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  padding: 10px;
+  margin-bottom: 170px;
+
+  .feat-box {
+    max-width: 355px;
+    height: auto;
+    display: flex;
+
+    &-icon {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 400;
+
+      &-circle-1 { @include  feat-colors (#73c8b7); }
+      &-circle-2 { @include  feat-colors (#31aae2); }
+      &-circle-3 { @include  feat-colors (#c183d6); }
+      &-circle-4 { @include  feat-colors (#eb768c); }
+      &-circle-5 { @include  feat-colors (#73c8b7); }
+      &-circle-6 { @include  feat-colors (#31aae2); }
+      &-circle-7 { @include  feat-colors (#ebd175); }
+      &-circle-8 { @include  feat-colors (#718ac7); }
+      &-circle-9 { @include  feat-colors (#4be3a4); }
+    }
+
+    &-text {
+      margin-left: 21px;
+      h4 {
+        color: #444;
+        font-family: $montser;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 30px;
+        color: #757575;
+        font-family: $muli;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+}

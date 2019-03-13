@@ -1,0 +1,29 @@
+@mixin header-impose($headersize, $headersize2, $movesize) {
+  display: flex;
+  align-items: baseline;
+  text-transform: uppercase;
+  h2 { font-size: $headersize; }
+  &-move {
+    margin-left: $movesize;
+    font-size: $headersize2;
+  }
+}
+
+@mixin resp-star {
+  text-align: left;
+  color: #757575;
+  font-family: $muli;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+}
+
+@mixin feat-colors ($fcolor){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 66px;
+  background-color: $fcolor;
+  border-radius: 50%;
+}
