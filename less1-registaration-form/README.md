@@ -3,6 +3,6 @@ HI :)
 
 ### Link to lesson1 MateAcademy:
 <!-- LINKS -->
-[GitHub page](https://skravche.github.io/less1-18/)
+[GitHub page](https://skravche.github.io/mate-basic-front-end/less1-registaration-form/)
 
 *Have a nice weekeng!*
